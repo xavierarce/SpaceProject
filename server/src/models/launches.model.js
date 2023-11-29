@@ -19,17 +19,17 @@ function getAllLaunches() {
   return Array.from(launches.values());
 }
 
-function AddNewLaunch(launch) {
+function addNewLaunch(launch) {
   latestFlightNumber++;
   launches.set(
-    latestFlightNumber, 
+    latestFlightNumber,
     Object.assign(launch, {
-      success:true,
-      upcoming:true,
-      customers:["Zero to Mastery", 'Nasa'],
-      flightNumber:latestFlightNumber,
+      success: true,
+      upcoming: true,
+      customers: ["Zero to Mastery", "Nasa"],
+      flightNumber: latestFlightNumber,
     })
   );
 }
 
-module.exports = { getAllLaunches , AddNewLaunch };
+module.exports = { getAllLaunches, addNewLaunch };
