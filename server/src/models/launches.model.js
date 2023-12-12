@@ -4,7 +4,7 @@ let latestFlightNumber = 100;
 //Our structure
 const launch = {
   flightNumber: 100,
-  mission: "Lasa",
+  mission: "First Exploration",
   rocket: "Explorer IS1",
   launchDate: new Date("December 27, 2030"),
   target: "Kepler-442 b",

@@ -17,14 +17,14 @@ function httpAddNewLauch(req, res) {
     !launch.rocket ||
     !launch.target
   ) {
-    return res.status(404).json({
+    return res.status(400).json({
       error: "Missing Required Launch Property",
     });
   }
 
   launch.launchDate = new Date(launch.launchDate); // Transform string into date object
   if (isNaN(launch.launchDate)) {
-    return res.status(404).json({
+    return res.status(400).json({
       error: "Invalid Launch Date",
     });
   }
@@ -38,7 +38,7 @@ function httpAbortLaunch(req, res) {
 
   //id launch doest exist 404
   if (!existsLaunchWithId(launchId))
-    return res.status(404).json({
+    return res.status(400).json({
       error: "Launch Doesnt Exist",
     });
 
