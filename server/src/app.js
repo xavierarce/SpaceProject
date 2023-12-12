@@ -19,7 +19,7 @@ app.use('/planets',planetsRouter); // goes to express routes
 app.use('/launches',launchesRouter);
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "publc", "index.html"));
 });
 
 module.exports = app;
