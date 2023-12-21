@@ -7,7 +7,7 @@ const app = require("./app");
 
 const PORT = process.env.PORT || 8000;
 
-const MONGO_URL= 'mongodb+srv://xavierarce54321:YXCzflAYtp0AfnZq@nasa.q0cnmlk.mongodb.net/?retryWrites=true&w=majority'
+const MONGO_URL= 'mongodb+srv://xavierarce54321:YXCzflAYtp0AfnZq@planetsproject.q0cnmlk.mongodb.net/?retryWrites=true&w=majority'
 
 const server = http.createServer(app);
 
