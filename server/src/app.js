@@ -12,7 +12,7 @@ app.use(cors({ origin: "http://localhost:3000" }));
 
 app.use(morgan("combined")); //Logging
 
-app.use(express.json()); //Checks for json content type if data
+app.use(express.json()); //Checks and extract for json content type in data
 app.use(express.static(path.join(__dirname, "..", "public")));
 
 app.use('/planets',planetsRouter); // goes to express routes
